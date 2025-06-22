@@ -3,5 +3,5 @@ export default defineConfig({
   build: {
     outDir: 'docs' 
   },
-  base: '/Buscador-de-clima/'
+  base: '/Buscador-clima/'
 })
