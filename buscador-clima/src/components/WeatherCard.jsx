@@ -14,7 +14,7 @@ function WeatherCard({ data }) {
       />
       <br />
       <a
-        href={`https://www.windguru.cz/search/${name}`}
+        href={`https://www.windguru.cz/`}
         target="_blank"
         rel="noopener noreferrer"
       >
