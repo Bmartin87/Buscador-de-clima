@@ -1,13 +1,12 @@
 import { useState } from 'react';
 
 function SearchBar({ onSearch }) {
-  const [input, setInput] = useState('');
+  const [city, setCity] = useState('');
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (input.trim()) {
-      onSearch(input.trim());
-      setInput('');
+    if (city.trim() !== '') {
+      onSearch(city.trim());
     }
   };
 
@@ -16,8 +15,8 @@ function SearchBar({ onSearch }) {
       <input
         type="text"
         placeholder="Escribí una ciudad"
-        value={input}
-        onChange={(e) => setInput(e.target.value)}
+        value={city}
+        onChange={(e) => setCity(e.target.value)}
       />
       <button type="submit">Buscar</button>
     </form>
