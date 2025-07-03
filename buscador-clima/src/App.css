@@ -64,3 +64,58 @@ button:hover {
   justify-content: center;
   min-height: 100vh;
 }
+.sidebar-climas {
+  background-color: #4184c7;
+  padding: 15px;
+  border-radius: 15px;
+  width: 230px;
+  box-shadow: 0 0 10px #1f1919;
+}
+}
+
+.sidebar-climas h3 {
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+}
+
+.sidebar-climas ul {
+  list-style: none;
+  padding: 0;
+}
+
+.mini-card {
+  border-bottom: 1px solid #ddd;
+  padding: 10px 0;
+  text-align: center;
+}
+
+.mini-card img {
+  width: 40px;
+}
+
+.mini-card h4 {
+  margin: 0;
+}
+
+.estado {
+  font-size: 0.85rem;
+  color: #555;
+  text-transform: capitalize;
+}
+
+
+.home-layout {
+  display: flex;
+  gap: 30px;
+  padding: 20px;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap; 
+}
+
+@media (max-width: 768px) {
+  .home-layout {
+    flex-direction: column;
+    align-items: center;
+  }
+}

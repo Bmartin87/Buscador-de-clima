@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import SearchBar from '../components/SearchBar';
 import WeatherCard from '../components/WeatherCard';
+import CapitalesClima from '../components/CapitalesClima';
 import { fetchWeatherByCity } from '../services/weatherApi';
 
 function HomePage() {
@@ -19,14 +20,16 @@ function HomePage() {
   };
 
   return (
-    <div className="app-container">
-      <h1>Buscador de Clima</h1>
-      <SearchBar onSearch={handleSearch} />
-      {error && <p style={{ color: 'red' }}>{error}</p>}
-      {weatherData && <WeatherCard data={weatherData} />}
+    <div className="home-layout">
+      <CapitalesClima onSelect={handleSearch} />
+      <div className="app-container">
+        <h1>Buscador de Clima</h1>
+        <SearchBar onSearch={handleSearch} />
+        {error && <p style={{ color: 'red' }}>{error}</p>}
+        {weatherData && <WeatherCard data={weatherData} />}
+      </div>
     </div>
   );
 }
 
 export default HomePage;
-
