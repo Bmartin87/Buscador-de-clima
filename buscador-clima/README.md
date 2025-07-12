@@ -26,7 +26,7 @@ Aplicación web que permite buscar el clima actual de cualquier ciudad del mundo
 
 ## 📸 Captura de pantalla
 
-![Vista previa de la app](./public/screenshot.png)
+![Vista previa de la app](./src/assets/Screenshot.png)
 
 
 
